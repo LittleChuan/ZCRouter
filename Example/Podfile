@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ZCRouter_Example' do
+  pod 'ZCRouter', :path => '../'
+
+  target 'ZCRouter_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
