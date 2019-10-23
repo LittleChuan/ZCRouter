@@ -1,0 +1,6 @@
+framework module ZCRouter {
+  umbrella header "ZCRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

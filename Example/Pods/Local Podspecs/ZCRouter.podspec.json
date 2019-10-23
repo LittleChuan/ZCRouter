@@ -1,0 +1,22 @@
+{
+  "name": "ZCRouter",
+  "version": "0.1.0",
+  "summary": "A short description of ZCRouter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ZackXXC/ZCRouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ZackXXC": "zackxxc@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ZackXXC/ZCRouter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZCRouter/Classes/**/*"
+}

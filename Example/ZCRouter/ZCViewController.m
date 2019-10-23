@@ -7,6 +7,7 @@
 //
 
 #import "ZCViewController.h"
+#import <ZCRouter/ZCRouter.h>
 
 @interface ZCViewController ()
 
@@ -18,12 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)push:(id)sender {
+        [ZCRouter open:@"zcp://main/2?aaa=bbb"];
+//        [ZCRouter open:@"2" params:@{@"aaa": @"bbb"}];
 }
+
 
 @end

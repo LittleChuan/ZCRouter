@@ -1,0 +1,23 @@
+PODS:
+  - Kiwi (3.0.0)
+  - ZCRouter (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - ZCRouter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Kiwi
+
+EXTERNAL SOURCES:
+  ZCRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  ZCRouter: 5405b657cf2aa3a2c13651bcde9f71ee72df8a46
+
+PODFILE CHECKSUM: 1289743fe29ec5894e07c89676674f8cf9a99bc5
+
+COCOAPODS: 1.8.3
