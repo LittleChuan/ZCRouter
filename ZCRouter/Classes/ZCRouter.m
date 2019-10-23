@@ -56,7 +56,7 @@
 + (void)open:(NSString *)route params:(NSDictionary *)params {
     NSString *clsStr = [ZCRouter shared].routeDic[route];
     Class cls = NSClassFromString(clsStr);
-    UIViewController<ZCRouter> *vc = [cls new];
+    UIViewController<ZCRouterProtocol> *vc = [cls new];
     
     if (params && [ZCRouter shared].propertyDic[clsStr]) {
         NSArray *props = [ZCRouter shared].propertyDic[clsStr];
@@ -112,7 +112,7 @@
                 while (class_getSuperclass(cls)) {
                     cls = class_getSuperclass(cls);
                 }
-                if (cls == [NSObject class] && [classes[i] conformsToProtocol:@protocol(ZCRouter)]){
+                if (cls == [NSObject class] && [classes[i] conformsToProtocol:@protocol(ZCRouterProtocol)]){
                     if ([classes[i] respondsToSelector:@selector(zc_router)]) {
                         self.routeDic[[classes[i] performSelector:@selector(zc_router)]] = NSStringFromClass(classes[i]);
                         [self getClassPropertyList:classes[i]];

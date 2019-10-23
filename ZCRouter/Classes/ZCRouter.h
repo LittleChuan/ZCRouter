@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol ZCRouter
+@protocol ZCRouterProtocol
 
 + (NSString *)zc_router;
 @optional

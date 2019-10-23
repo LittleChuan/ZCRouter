@@ -10,7 +10,7 @@
 
 #import <ZCRouter/ZCRouter.h>
 
-@interface ZC2ViewController () <ZCRouter>
+@interface ZC2ViewController () <ZCRouterProtocol>
 
 @end
 
